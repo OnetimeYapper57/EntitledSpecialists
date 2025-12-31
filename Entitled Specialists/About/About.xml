@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Entitled Specialists</name>
+    <author>OnetimeYapper57</author>
+    <packageId>OnetimeYapper57.EntitledSpecialists</packageId>
+    <modVersion>1.0.2</modVersion>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <description>All specialists can do all work types, but their expectations are increased by one level. Descriptions from Ideology and Vanilla Ideology Expanded are patched to not mention restricted work types.</description>
+    <modDependencies>
+        <li>
+            <packageId>Ludeon.RimWorld.Ideology</packageId>
+            <displayName>Ideology</displayName>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>vanillaexpanded.vmemese</li>
+        <li>sarg.alphamemes</li>
+        <li>vanillaexpanded.gravship</li>
+    </loadAfter>
+    <incompatibleWith>
+        <li>Ducks.SpecialistsCanWork</li>
+        <li>OPA.AllSpecialistsCanWork</li>
+    </incompatibleWith>
+</ModMetaData>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef[defName="IdeoRole_ShootingSpecialist"]/description</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/PreceptDef[defName="IdeoRole_ShootingSpecialist"]/description</xpath>
+            <value>
+                <description>A special ideoligious status focusing on ranged combat. This specialized role gives increased accuracy and the ability to boost the shooting abilities of nearby allies.</description>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef[defName="IdeoRole_MeleeSpecialist"]/description</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/PreceptDef[defName="IdeoRole_MeleeSpecialist"]/description</xpath>
+            <value>
+                <description>A special ideoligious status focusing on melee combat. This specialized role gives increased dodge and hit chance in melee combat and the ability to enter a short-term berserk trance.</description>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef[defName="IdeoRole_ResearchSpecialist"]/description</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/PreceptDef[defName="IdeoRole_ResearchSpecialist"]/description</xpath>
+            <value>
+                <description>A special ideoligious status focusing on research. This specialized role gives increased research and hacking speed, and the ability to boost research abilities of nearby allies.</description>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef[defName="IdeoRole_PlantSpecialist"]/description</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/PreceptDef[defName="IdeoRole_PlantSpecialist"]/description</xpath>
+            <value>
+                <description>A special ideoligious status focusing on planting. This specialized role gives increased sowing and harvesting efficiency, and the ability to boost the farming speed of nearby allies.</description>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef[defName="IdeoRole_ProductionSpecialist"]/description</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/PreceptDef[defName="IdeoRole_ProductionSpecialist"]/description</xpath>
+            <value>
+                <description>A special ideoligious status focusing on crafting and construction. This specialized role gives increased crafting and construction efficiency, and the ability to boost the production abilities of nearby allies.</description>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef[defName="IdeoRole_MiningSpecialist"]/description</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/PreceptDef[defName="IdeoRole_MiningSpecialist"]/description</xpath>
+            <value>
+                <description>A special ideoligious status focusing on mining. This specialized role gives increased mining speed, and the ability to boost the mining speed of nearby allies.</description>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef[defName="IdeoRole_AnimalsSpecialist"]/description</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/PreceptDef[defName="IdeoRole_AnimalsSpecialist"]/description</xpath>
+            <value>
+                <description>A special ideoligious status focusing on animals. This specialized role gives increased taming and training efficiency.</description>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef[defName="IdeoRole_MedicalSpecialist"]/description</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/PreceptDef[defName="IdeoRole_MedicalSpecialist"]/description</xpath>
+            <value>
+                <description>A special ideoligious status focusing on medicine. This specialized role gives improved surgery and tending efficiency, and the ability to boost the medical abilities of nearby allies. Believers who receive care from one of this role will be happy about it.</description>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Ideology Expanded - Memes and Structures</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/PreceptDef[defName="VME_IdeoRole_InsectoidHerder"]/description</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>Defs/PreceptDef[defName="VME_IdeoRole_InsectoidHerder"]/description</xpath>
+                        <value>
+                            <description>A talented tamer of insectoids. Through study or natural talent these leaders are capable of immediately understanding and controlling insectoid creatures. Insectoid herders can erect insectoid hives as part of a short ritual.</description>
+                        </value>
+                    </match>
+                </li>
+                
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/PreceptDef[defName="VME_IdeoRole_Mechacker"]/description</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>Defs/PreceptDef[defName="VME_IdeoRole_Mechacker"]/description</xpath>
+                        <value>
+                            <description>A brilliant engineer capable of assembling mechanoid effigies. Unlike their entitled counterparts, Mechackers do not recive increased expectations from their role. All Mechackers possess the ability to overload and detonate turrets or hostile mechanoids, causing an explosion.</description>
+                        </value>
+                    </match>
+                </li>
+            </operations>
+        </match>
+    </Operation> 
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Gravship Expanded - Chapter 1</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/PreceptDef[defName="VGE_IdeoRole_EngineeringSpecialist"]/description</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>Defs/PreceptDef[defName="VGE_IdeoRole_EngineeringSpecialist"]/description</xpath>
+                        <value>
+                            <description>A special ideoligious status focused on maintaining and improving gravship systems. This specialized role grants increased construction and repair efficiency, and the ability to coordinate nearby crew to improve maintenance operations across the ship. Holders of this role dedicate themselves to the ship's well-being.</description>
+                            <!-- This description originally had "to the exclusion of all else" in it, so I thought it restricted work types, but it doesn't. Weird. I'm patching it anyway so it isn't misleading. -->
+                            <!-- The other two roles from this mod don't imply they have restrictions, so it's extra weird. -->
+                        </value>
+                    </match>
+                </li>
+            </operations>
+        </match>
+    </Operation> 
+</Patch>
